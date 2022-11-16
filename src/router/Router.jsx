@@ -2,6 +2,7 @@ import React from 'react'
 import MainSite from '../views/MainSite.jsx'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
+
 const PageNotFound = () => <Navigate to={'/'} />
 
 const Router = () => {
