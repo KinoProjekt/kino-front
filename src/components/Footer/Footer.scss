@@ -1,0 +1,19 @@
+.footer-wrapper{
+    background-color: #1D1D1D;
+    color:#F2F2F2;
+    height:30px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left:0;
+    bottom:0;
+    font-family: 'GeneralSans-Regular';;
+}
+.text-left{
+    padding: 5px 20px;
+}
+.text-right{
+    padding: 5px 20px;
+}
