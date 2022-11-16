@@ -1,4 +1,5 @@
 import React from 'react'
+import MainSite from '../views/MainSite.jsx'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 const PageNotFound = () => <Navigate to={'/'} />
@@ -8,7 +9,7 @@ const Router = () => {
     <BrowserRouter>
       <p>navbar</p>
       <Routes>
-        <Route path={'/'} element={<h1>Strona Główna</h1>} />
+        <Route path={'/'} element={<MainSite />} />
         <Route path={'/repertuar'} element={<h1>Strona testowa</h1>} />
         <Route path={'/wydarzenia'} element={<h1>Strona testowa</h1>} />
         <Route path={'/promocje'} element={<h1>Strona testowa</h1>} />
