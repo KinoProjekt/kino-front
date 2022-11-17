@@ -1,9 +1,10 @@
 import './MainSite.scss'
+import FilmList from '../../components/FilmList/FilmList.jsx'
 
 const MainSite = () => {
   return (
     <div>
-      <span></span>
+      <FilmList />
     </div>
   )
 }

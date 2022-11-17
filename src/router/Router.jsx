@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
-
 const PageNotFound = () => <Navigate to={'/'} />
 
 const Router = () => {

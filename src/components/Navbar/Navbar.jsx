@@ -2,6 +2,7 @@ import './Navbar.scss'
 import { FaRegLightbulb } from 'react-icons/fa'
 import { FaRegUser } from 'react-icons/fa'
 import { useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function CheckRoute() {
   const location = useLocation()
@@ -9,26 +10,57 @@ function CheckRoute() {
 }
 
 const Navbar = () => {
+  const navigation = useNavigate()
   return (
     <nav className="nav-wrapper">
-      <div className="row">
-        <div className="left">
-          <span className="title">Multiverse©</span>
+      <div className="nav-row">
+        <div className="nav-left">
+          <span className="nav-title">Multiverse©</span>
         </div>
-        <div className="right">
-          <FaRegLightbulb className="icon" />
-          <FaRegUser className="icon" />
+        <div className="nav-right">
+          <FaRegLightbulb className="nav-icon" />
+          <FaRegUser className="nav-icon" />
         </div>
       </div>
-      <div className="row">
-        <div className="left-row">
-          <div className={`menu ${CheckRoute() == "/repertuar" ? "active" : ""}`}>repertuar</div>
-          <div className={`menu ${CheckRoute() == "/wydarzenia" ? "active" : ""}`}>wydarzenia</div>
-          <div className={`menu ${CheckRoute() == "/promocje" ? "active" : ""}`}>promocje</div>
-          <div className={`menu ${CheckRoute() == "/wiadomosci" ? "active" : ""}`}>wiadomości</div>
+      <div className="nav-row">
+        <div className="nav-left-row">
+          <div
+            onClick={() => navigation('/repertuar')}
+            className={`nav-menu ${
+              CheckRoute() == '/repertuar' ? 'nav-active' : ''
+            }`}
+          >
+            repertuar
+          </div>
+          <div
+            onClick={() => navigation('/wydarzenia')}
+            className={`nav-menu ${
+              CheckRoute() == '/wydarzenia' ? 'nav-active' : ''
+            }`}
+          >
+            wydarzenia
+          </div>
+          <div
+            onClick={() => navigation('/promocje')}
+            className={`nav-menu ${
+              CheckRoute() == '/promocje' ? 'nav-active' : ''
+            }`}
+          >
+            promocje
+          </div>
+          <div
+            onClick={() => navigation('/wiadomosci')}
+            className={`nav-menu ${
+              CheckRoute() == '/wiadomosci' ? 'nav-active' : ''
+            }`}
+          >
+            wiadomości
+          </div>
         </div>
-        <div className="right">
-          <span className="subtitle">Strona główna</span>
+        <div className="nav-right">
+          <span onClick={() => navigation('/')} className="nav-subtitle">
+            Strona główna
+          </span>
         </div>
       </div>
     </nav>

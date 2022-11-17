@@ -3,33 +3,35 @@
   display: flex;
   flex-direction: column;
   height: 100px;
+  user-select: none;
 }
-.row {
+.nav-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.right {
+.nav-right {
   padding-right: 10px;
 }
-.left {
+.nav-left {
   padding-left: 20px;
   font-size: 2rem;
   font-family: 'GeneralSans-Medium';
 }
-.left-row {
+.nav-left-row {
   padding-left: 18px;
   display: flex;
   flex-direction: row;
 }
-.icon {
+.nav-icon {
   width: 25px;
   height: 25px;
   margin-right: 10px;
+  cursor: pointer;
 }
-.menu {
+.nav-menu {
   width: auto;
-  padding: 3px 15px;
+  padding: 5px 15px;
   font-size: 1rem;
   font-family: 'GeneralSans-Regular';
   text-align: center;
@@ -39,13 +41,14 @@
   border: 1px solid #6c63ff;
   cursor: pointer;
 }
-.active{
-    background-color:#6c63ff;
-    color:white;
+.nav-active {
+  background-color: #6c63ff;
+  color: white;
 }
-.subtitle {
+.nav-subtitle {
   font-family: 'GeneralSans-Regular';
   font-size: 1rem;
   text-decoration: underline;
   padding-right: 10px;
+  cursor: pointer;
 }
