@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   gap: 20px;
-
 }
 
 .rep-movie-2 {
@@ -12,11 +11,11 @@
 .rep-movie-1 p:first-child {
   text-transform: uppercase;
 }
-.rep-movie-1 p:last-child, .rep-movie-2 p:last-child {
+.rep-movie-1 p:last-child,
+.rep-movie-2 p:last-child {
   font-size: 1rem;
 }
 
 .rep-movie-icon {
   font-size: 2.5rem;
 }
-

@@ -1,25 +1,23 @@
-.wrapper-films{
-    display:flex;
-    flex-direction: column;
-    padding: 0 20px;
+.wrapper-films {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
-.row-films{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px 0px;
+.row-films {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0px;
 }
-.title-films{
-    font-family:'GeneralSans-SemiBold';
-    font-size:2rem;
+.title-films {
+  font-family: 'GeneralSans-SemiBold';
+  font-size: 2rem;
 }
-.searchInputWrapper{
-    margin-top:200px;
-}
-
-
-.rep-body p{
-    font-family: 'GeneralSans-Medium';
-    font-size:1.5rem;
+.searchInputWrapper {
+  margin-top: 200px;
 }
 
+.rep-body p {
+  font-family: 'GeneralSans-Medium';
+  font-size: 1.5rem;
+}

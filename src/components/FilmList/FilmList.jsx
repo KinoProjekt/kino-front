@@ -8,46 +8,43 @@ const FilmList = () => {
     <div className="wrapper-films">
       <div className="row-films">
         <span className="title-films">NA EKRANIE W KINIE</span>
-        <SearchInput/>
+        <SearchInput />
       </div>
       <Line />
 
-
       <div className="rep-body">
-        {movies.map(movie => {
-          return <MovieEntry key={movie.title} movie={movie}/>
+        {movies.map((movie) => {
+          return <MovieEntry key={movie.title} movie={movie} />
         })}
       </div>
-
     </div>
   )
 }
 
-
 const movies = [
   {
-    title: "Avatar: Istota Wody",
+    title: 'Avatar: Istota Wody',
     availableSeats: 1,
-    premierDate: "14/11/2022",
-    premierTime: "20:00"
+    premierDate: '14/11/2022',
+    premierTime: '20:00',
   },
   {
-    title: "Dzika noc",
+    title: 'Dzika noc',
     availableSeats: 17,
-    premierDate: "14/11/2022",
-    premierTime: "18:00"
+    premierDate: '14/11/2022',
+    premierTime: '18:00',
   },
   {
-    title: "Bella i Sebastian: Nowe Pokolenie",
+    title: 'Bella i Sebastian: Nowe Pokolenie',
     availableSeats: 2,
-    premierDate: "15/11/2022",
-    premierTime: "20:00"
+    premierDate: '15/11/2022',
+    premierTime: '20:00',
   },
   {
-    title: "Kierunek księżyc",
+    title: 'Kierunek księżyc',
     availableSeats: 32,
-    premierDate: "15/11/2022",
-    premierTime: "18:00"
+    premierDate: '15/11/2022',
+    premierTime: '18:00',
   },
 ]
 
