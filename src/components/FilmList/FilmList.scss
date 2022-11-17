@@ -1,11 +1,11 @@
 .wrapper-films{
     display:flex;
     flex-direction: column;
+    padding: 0 20px;
 }
 .row-films{
     display:flex;
     flex-direction: row;
-    padding: 0 20px;
     justify-content: space-between;
     margin: 20px 0px;
 }
@@ -16,3 +16,10 @@
 .searchInputWrapper{
     margin-top:200px;
 }
+
+
+.rep-body p{
+    font-family: 'GeneralSans-Medium';
+    font-size:1.5rem;
+}
+
