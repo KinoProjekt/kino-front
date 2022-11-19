@@ -1,26 +1,33 @@
-.movie p {
-  font-family: 'GeneralSans-Medium';
-  font-size: 1.5rem;
-}
+@use '../../styles/abstracts/all' as *;
 
 .movie {
   display: flex;
   align-items: center;
   gap: 20px;
-}
+  padding: 12px 0;
 
-.movie div:nth-child(3) {
-  margin-left: auto;
-}
+  p {
+    font-family: 'GeneralSans-Medium';
+    font-size: 1.3rem;
+  }
 
-.movie p:first-child {
-  text-transform: uppercase;
-}
-.movie p:last-child,
-.movie p:last-child {
-  font-size: 1rem;
-}
+  div:nth-child(3) {
+    margin-left: auto;
+    text-align: right;
+  }
 
-.movie svg {
-  font-size: 2.5rem;
+  p:first-child {
+    text-transform: uppercase;
+  }
+
+  p:last-child {
+    font-size: 1rem;
+    color: $purple;
+    margin-top: 10px;
+  }
+
+  svg {
+    font-size: 2.5rem;
+    padding: 0 40px;
+  }
 }
