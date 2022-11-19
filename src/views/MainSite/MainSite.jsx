@@ -1,4 +1,4 @@
-import './MainSite.scss'
+import s from './MainSite.module.scss'
 import FilmList from '../../components/FilmList/FilmList.jsx'
 
 const MainSite = () => {

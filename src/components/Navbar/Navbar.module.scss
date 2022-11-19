@@ -1,35 +1,35 @@
-.nav-wrapper {
+.navWrapper {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   height: 100px;
   user-select: none;
 }
-.nav-row {
+.navRow {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.nav-right {
+.navRight {
   padding-right: 10px;
 }
-.nav-left {
+.navLeft {
   padding-left: 20px;
   font-size: 2rem;
   font-family: 'GeneralSans-Medium';
 }
-.nav-left-row {
+.navLeftRow {
   padding-left: 18px;
   display: flex;
   flex-direction: row;
 }
-.nav-icon {
+.navIcon {
   width: 25px;
   height: 25px;
   margin-right: 10px;
   cursor: pointer;
 }
-.nav-menu {
+.navMenu {
   width: auto;
   padding: 5px 15px;
   font-size: 1rem;
@@ -41,11 +41,11 @@
   border: 1px solid #6c63ff;
   cursor: pointer;
 }
-.nav-active {
+.navActive {
   background-color: #6c63ff;
   color: white;
 }
-.nav-subtitle {
+.navSubtitle {
   font-family: 'GeneralSans-Regular';
   font-size: 1rem;
   text-decoration: underline;

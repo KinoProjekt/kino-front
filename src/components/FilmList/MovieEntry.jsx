@@ -1,18 +1,18 @@
 import { AiOutlinePlus } from 'react-icons/ai'
 import Line from '../../common/Line/Line.jsx'
-import './MovieEntry.scss'
+import styles from './MovieEntry.module.scss'
 
 const MovieEntry = ({ movie }) => {
   return (
     <>
       <Line />
-      <div className="rep-movie">
-        <AiOutlinePlus className="rep-movie-icon" />
-        <div className="rep-movie-1">
+      <div className={styles.movie}>
+        <AiOutlinePlus  />
+        <div>
           <p>{movie.title}</p>
           <p>{movie.availableSeats} wolnych miejsc</p>
         </div>
-        <div className="rep-movie-2">
+        <div>
           <p>{movie.premierDate}</p>
           <p>{movie.premierTime}</p>
         </div>

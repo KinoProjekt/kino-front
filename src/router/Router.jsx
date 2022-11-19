@@ -1,5 +1,4 @@
 import React from 'react'
-import './Router.scss'
 import MainSite from '../views/MainSite/MainSite'
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'

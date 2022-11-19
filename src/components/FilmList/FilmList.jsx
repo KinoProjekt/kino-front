@@ -1,18 +1,16 @@
-import './FilmList.scss'
-import Line from '../../common/Line/Line.jsx'
+import s from './FilmList.module.scss'
 import SearchInput from '../../common/SearchInput/SearchInput'
 import MovieEntry from './MovieEntry'
 
 const FilmList = () => {
   return (
-    <div className="wrapper-films">
-      <div className="row-films">
-        <span className="title-films">NA EKRANIE W KINIE</span>
+    <div className={s.wrapperFilms}>
+      <div className={s.rowFilms}>
+        <span className={s.titleFilms}>NA EKRANIE W KINIE</span>
         <SearchInput />
       </div>
-      <Line />
 
-      <div className="rep-body">
+      <div>
         {movies.map((movie) => {
           return <MovieEntry key={movie.title} movie={movie} />
         })}

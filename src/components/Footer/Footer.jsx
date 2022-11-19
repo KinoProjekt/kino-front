@@ -1,10 +1,10 @@
-import './Footer.scss'
+import s from './Footer.module.scss'
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper">
-      <span className="text-left">2022 © Multiverse</span>
-      <span className="text-right">O agencji</span>
+    <div className={s.footer}>
+      <span className={s.left}>2022 © Multiverse</span>
+      <span className={s.right}>O agencji</span>
     </div>
   )
 }
