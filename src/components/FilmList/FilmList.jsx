@@ -1,13 +1,20 @@
 import s from './FilmList.module.scss'
 import SearchInput from '../../common/SearchInput/SearchInput'
 import MovieEntry from './MovieEntry'
+import Button from '../../common/Button/Button'
 
 const FilmList = () => {
   return (
     <div className={s.wrapperFilms}>
       <div className={s.rowFilms}>
-        <span className={s.titleFilms}>NA EKRANIE W KINIE</span>
-        <SearchInput />
+        <div>
+          <span className={s.titleFilms}>NA EKRANIE W KINIE</span>
+          <SearchInput />
+        </div>
+        <div>
+          <Button isActive={false}>W Repertuarze</Button>
+          <Button isActive={true}>Premiery</Button>
+        </div>
       </div>
 
       <div>

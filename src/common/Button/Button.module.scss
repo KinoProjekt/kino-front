@@ -1,0 +1,10 @@
+@use '../../styles' as *;
+
+.btn {
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-family: $GeneralSansMedium;
+  font-size: $normal-size;
+  border: none;
+  cursor: pointer;
+}

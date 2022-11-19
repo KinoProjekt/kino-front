@@ -4,10 +4,16 @@
   padding: 0 20px;
 }
 .rowFilms {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px 0px;
+  & > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px 0px;
+  }
+  
+  & > div:last-child {
+    margin: 30px 0;
+  }
 }
 .titleFilms {
   font-family: 'GeneralSans-SemiBold';
@@ -16,4 +22,3 @@
 .searchInputWrapper {
   margin-top: 200px;
 }
-
