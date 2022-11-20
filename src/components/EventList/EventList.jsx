@@ -1,15 +1,14 @@
-
-import s from './EventList.module.scss';
-import Event from './Event';
-
+import s from './EventList.module.scss'
+import Event from './Event'
 
 const EventList = () => {
-  return  (
+  return (
     <div className={s.eventListWrapper}>
       <h1>Polecane wydarzenia</h1>
 
-      {events.map(el =>  <Event event={el} key={el.id}/> )}
-
+      {events.map((el) => (
+        <Event event={el} key={el.id} />
+      ))}
     </div>
   )
 }

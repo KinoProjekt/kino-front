@@ -1,0 +1,49 @@
+@use '../../styles' as *;
+
+.wrapper {
+  padding: 0 20px;
+  max-width: 1366px;
+  margin: 0 auto 100px;
+
+  font-family: $GeneralSansMedium;
+
+  h1 {
+    margin: 50px 0;
+  }
+}
+
+.promWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  figure:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+
+    img {
+      height: 100%;
+      max-height: 81%;
+    }
+  }
+
+  figcaption {
+    p:first-child {
+      padding: 10px 0;
+    }
+
+    p:last-child {
+      color: $purple;
+      font-size: 0.9rem;
+    }
+  }
+}
