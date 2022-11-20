@@ -2,6 +2,8 @@ import s from './FilmList.module.scss'
 import SearchInput from '../../common/SearchInput/SearchInput'
 import MovieEntry from './MovieEntry'
 import Button from '../../common/Button/Button'
+import DatePicker from '../../common/DatePicker/DatePicker'
+import ComboBox from '../../common/ComboBox/ComboBox'
 
 const FilmList = () => {
   return (
@@ -11,12 +13,17 @@ const FilmList = () => {
           <h1>NA EKRANIE W KINIE</h1>
           <SearchInput />
         </div>
-        <div className='buttons'>
-          <Button isActive={false}>W Repertuarze</Button>
-          <Button isActive={true}>Premiery</Button>
+        <div>
+          <div>
+            <Button isActive={false}>W Repertuarze</Button>
+            <Button isActive={true}>Premiery</Button>
+          </div>
+          <div className={s.column}>
+            <ComboBox options={options} label={label} />
+            <DatePicker />
+          </div>
         </div>
       </div>
-
       <div>
         {movies.map((movie) => {
           return <MovieEntry key={movie.title} movie={movie} />
@@ -25,6 +32,12 @@ const FilmList = () => {
     </div>
   )
 }
+const options = [
+  { label: 'Wejherowo' },
+  { label: 'Gdańsk' },
+  { label: 'Kraków' },
+]
+const label = 'Wybierz miasto...'
 
 const movies = [
   {

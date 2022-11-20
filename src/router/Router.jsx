@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { MainSite, PageNotFound } from '../views'
 import { Navbar, Footer } from '../components'
+import Repertuar from '../views/Repertuar/Repertuar'
 
 const Router = () => {
   return (
@@ -9,7 +10,7 @@ const Router = () => {
       <Navbar />
       <Routes>
         <Route path={'/'} element={<MainSite />} />
-        <Route path={'/repertuar'} element={<h1>Strona testowa</h1>} />
+        <Route path={'/repertuar'} element={<Repertuar />} />
         <Route path={'/wydarzenia'} element={<h1>Strona testowa</h1>} />
         <Route path={'/promocje'} element={<h1>Strona testowa</h1>} />
         <Route path={'/wiadomosci'} element={<h1>Strona testowa</h1>} />
