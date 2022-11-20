@@ -1,0 +1,21 @@
+@use '../../styles/' as *;
+
+.event {
+  font-family: $GeneralSansMedium;
+  background: linear-gradient(
+    113deg,
+    $black 0%,
+    $black 49%,
+    $gray 49.1%,
+    $gray 100%
+  );
+  color: $white;
+
+  padding: 100px 0 30px 30px;
+  margin: 20px 0;
+
+  p:last-child {
+    color: $purple;
+    margin-top: 15px;
+  }
+}

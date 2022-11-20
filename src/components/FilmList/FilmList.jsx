@@ -8,7 +8,7 @@ const FilmList = () => {
     <div className={s.wrapperFilms}>
       <div className={s.rowFilms}>
         <div>
-          <span className={s.titleFilms}>NA EKRANIE W KINIE</span>
+          <h1>NA EKRANIE W KINIE</h1>
           <SearchInput />
         </div>
         <div>

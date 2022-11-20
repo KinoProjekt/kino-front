@@ -1,10 +1,11 @@
 // import s from './MainSite.module.scss'
-import FilmList from '../../components/FilmList/FilmList.jsx'
+import {FilmList, EventList} from '../../components/'
 
 const MainSite = () => {
   return (
     <>
       <FilmList />
+      <EventList />
     </>
   )
 }

@@ -24,3 +24,9 @@
   font-display: swap;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'BebasNeue';
+  src:  url('../../src/static/fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('../../src/static/fonts/BebasNeue-Regular.woff') format('woff');
+}
