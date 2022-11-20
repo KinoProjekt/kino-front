@@ -15,14 +15,13 @@
 .promWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px 250px;
   gap: 30px;
 
   img {
     display: block;
     width: 100%;
-    height: 100%;
-    max-height: 200px;
+    height: calc(100% - 50px);
     object-fit: cover;
   }
 
@@ -30,15 +29,11 @@
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 
-    img {
-      height: 100%;
-      max-height: 81%;
-    }
   }
 
   figcaption {
     p:first-child {
-      padding: 10px 0;
+      padding: 15px 0 10px;
     }
 
     p:last-child {
