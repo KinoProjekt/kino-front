@@ -1,10 +1,7 @@
 import React from 'react'
-import MainSite from '../views/MainSite/MainSite'
-import Navbar from '../components/Navbar/Navbar'
-import Footer from '../components/Footer/Footer'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-
-const PageNotFound = () => <Navigate to={'/'} />
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { MainSite, PageNotFound } from '../views'
+import { Navbar, Footer } from '../components'
 
 const Router = () => {
   return (

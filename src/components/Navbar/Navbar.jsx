@@ -1,3 +1,4 @@
+import React from 'react'
 import s from './Navbar.module.scss'
 import { FaRegLightbulb } from 'react-icons/fa'
 import { FaRegUser } from 'react-icons/fa'
@@ -11,14 +12,15 @@ function CheckRoute() {
 const Navbar = () => {
   const navigation = useNavigate()
   return (
-    <nav className={s.NavWrapper}>
+    <nav className={s.navWrapper}>
       <div className={s.navRow}>
         <div className={s.navLeft}>
           <span className={s.navTitle}>Multiverse©</span>
         </div>
         <div className={s.navRight}>
           <FaRegLightbulb className={s.navIcon} />
-          <FaRegUser className={s.navIcon}/>
+          <div className={s.navLine} />
+          <FaRegUser className={s.navIcon} />
         </div>
       </div>
       <div className={s.navRow}>
@@ -50,7 +52,7 @@ const Navbar = () => {
           <div
             onClick={() => navigation('/wiadomosci')}
             className={`${s.navMenu} ${
-              CheckRoute() == '/wiadomosci' ? `${s.navActive}`: ''
+              CheckRoute() == '/wiadomosci' ? `${s.navActive}` : ''
             }`}
           >
             wiadomości
@@ -58,7 +60,7 @@ const Navbar = () => {
         </div>
         <div className={s.navRight}>
           <span onClick={() => navigation('/')} className={s.navSubtitle}>
-            Strona główna
+            strona główna
           </span>
         </div>
       </div>

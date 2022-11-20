@@ -1,7 +1,9 @@
+@import '../../styles/index.scss';
+
 .footer{
-  background-color: #1d1d1d;
-  color: #f2f2f2;
-  height: 30px;
+  background-color: $black;
+  color: $white;
+  height: 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -9,12 +11,18 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  font-size: 1.05rem;
+  line-height: calc(1.05rem * 1.5);
+  letter-spacing: 0.02rem;
   font-family: 'GeneralSans-Regular';
-}
-.left {
-  padding: 5px 20px;
-}
-.right {
-  padding: 5px 20px;
-  text-decoration: underline;
+
+  & .left {
+    padding: .5rem 2rem;
+  }
+  
+  & .right {
+    padding: .5rem 2rem;
+    text-decoration: underline;
+  }
+  
 }
