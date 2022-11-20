@@ -11,7 +11,7 @@ const FilmList = () => {
           <h1>NA EKRANIE W KINIE</h1>
           <SearchInput />
         </div>
-        <div>
+        <div className='buttons'>
           <Button isActive={false}>W Repertuarze</Button>
           <Button isActive={true}>Premiery</Button>
         </div>
