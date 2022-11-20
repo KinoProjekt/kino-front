@@ -1,8 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { MainSite, PageNotFound } from '../views'
+import { MainSite, PageNotFound, Repertuar } from '../views'
 import { Navbar, Footer } from '../components'
-import Repertuar from '../views/Repertuar/Repertuar'
 
 const Router = () => {
   return (

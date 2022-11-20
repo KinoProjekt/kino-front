@@ -13,25 +13,25 @@
     margin: 25px 0px 10px 0px;
   }
 }
-.column{
+.column {
   display: flex;
   //combobox
-  & > div:nth-child(1){
+  & > div:nth-child(1) {
     margin-right: 20px;
     & > div {
-      label{
+      label {
         color: $black;
       }
-      & > div{
-        height:45px !important;
-        & > input{
+      & > div {
+        height: 45px !important;
+        & > input {
           margin-top: -5px;
         }
-        & > fieldset{
+        & > fieldset {
           border: 2px solid $black;
         }
         & > div > button {
-          svg{
+          svg {
             color: $black;
           }
         }
@@ -39,13 +39,18 @@
     }
   }
   //datapicker
-  & > div:nth-child(2){
-    & label{
+  & > div:nth-child(2) {
+    & label {
       color: $black;
     }
     & > div {
-      & > fieldset{
+      & > fieldset {
         border: 2px solid $black;
+      }
+      & > div > button {
+        svg {
+          color: $black;
+        }
       }
     }
   }
@@ -54,6 +59,29 @@
 .searchInputWrapper {
   margin-top: 200px;
 }
-button:first-child{
-  padding-left:0px;
+button:first-child {
+  padding-left: 0px;
+}
+.showMore {
+  font-family: $GeneralSansSemibold;
+  color: $black;
+  font-size: 1rem;
+  border: 3px solid $purple;
+  border-radius: 40px;
+  width: auto;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s ease-out;
+}
+.showMore:hover {
+  font-size: 1.5rem;
+  background-color: $purple;
+  color: $white;
+  transition: 0.5s ease-in-out;
+}
+.popup {
+  display: flex;
+  justify-content: center;
 }

@@ -1,12 +1,10 @@
-import FilmList from '../../components/FilmList/FilmList.jsx'
+import { FilmList } from '../../components/'
 
-const Repertuar = () =>{
+const Repertuar = () => {
+  return (
     <div className="wrapper">
-        <p>es</p>
-        <p>es</p>
-        <p>es</p>
-        <p>es</p>
+      <FilmList isMainSite={true} />
     </div>
+  )
 }
-
 export default Repertuar

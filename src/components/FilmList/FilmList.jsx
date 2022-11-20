@@ -5,12 +5,13 @@ import Button from '../../common/Button/Button'
 import DatePicker from '../../common/DatePicker/DatePicker'
 import ComboBox from '../../common/ComboBox/ComboBox'
 
-const FilmList = () => {
+const FilmList = (props) => {
   return (
     <div className={s.wrapperFilms}>
       <div className={s.rowFilms}>
         <div>
-          <h1>NA EKRANIE W KINIE</h1>
+          {!props.isMainSite && <h1>NA EKRANIE KINA</h1>}
+          {props.isMainSite && <h1>REPERTUAR KINA</h1>}
           <SearchInput />
         </div>
         <div>
@@ -28,10 +29,22 @@ const FilmList = () => {
         {movies.map((movie) => {
           return <MovieEntry key={movie.title} movie={movie} />
         })}
+        {props.isMainSite && (
+          <div className={s.popup}>
+            <div className={s.showMore} onClick={showMore}>
+              Pokaz więcej
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )
 }
+
+function showMore() {
+  alert('test')
+}
+
 const options = [
   { label: 'Wejherowo' },
   { label: 'Gdańsk' },
