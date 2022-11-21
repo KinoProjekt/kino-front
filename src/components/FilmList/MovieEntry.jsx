@@ -7,7 +7,7 @@ const MovieEntry = ({ movie }) => {
     <>
       <Line />
       <div className={styles.movie}>
-        <AiOutlinePlus  />
+        <AiOutlinePlus />
         <div>
           <p>{movie.title}</p>
           <p>{movie.availableSeats} wolnych miejsc</p>
