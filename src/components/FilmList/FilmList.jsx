@@ -19,6 +19,10 @@ const FilmList = (props) => {
   //adding films by button press
   const [genMovies, setGenMovies] = useState(firstMovies)
 
+  if (genMovies.length != allMovies.length) {
+    noMore = false
+  }
+
   function showMore() {
     for (let i = genMovies.length; i < genMovies.length + 4; i++) {
       if (i < allMovies.length) {
