@@ -1,0 +1,82 @@
+@use '../../styles/' as *;
+
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  font-family: $GeneralSansRegular;
+
+  h1 {
+    margin: 70px 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  row-gap: 50px;
+
+  .top > div > p {
+    font-family: $GeneralSansMedium;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin: 15px 0;
+  }
+
+  .card {
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      background-color: $purple;
+      padding: 10px 12px;
+      margin: 0px 5px 5px 0px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.imgWrapper {
+  max-width: 315px;
+  height: 315px;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.link {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: initial;
+  text-decoration: none;
+  outline: 2px solid $purple;
+  margin: 10px 0;
+  padding: 2px 10px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  &:first-child {
+    margin-top: 0px;
+  }
+}
+
+.rightLink {
+  svg {
+    font-size: 2rem;
+    transition: all 0.2s;
+  }
+}

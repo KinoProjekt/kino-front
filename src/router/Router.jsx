@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { MainSite, PageNotFound, Repertuar } from '../views'
-import { Navbar, Footer } from '../components'
+import { Navbar, Footer, Team } from '../components'
 
 const Router = () => {
   return (
@@ -14,6 +14,7 @@ const Router = () => {
         <Route path={'/promocje'} element={<h1>Strona testowa</h1>} />
         <Route path={'/wiadomosci'} element={<h1>Strona testowa</h1>} />
         <Route path={'/film/:filmName'} element={<h1>Strona testowa</h1>} />
+        <Route path={'/team'} element={<Team />} />
         <Route path={'*'} element={<PageNotFound />} />
       </Routes>
       <Footer />
