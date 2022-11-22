@@ -13,8 +13,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 50px;
+  column-gap: 25px;
 
   .top > div > p {
     font-family: $GeneralSansMedium;
@@ -24,11 +25,16 @@
   }
 
   .card {
-    max-width: 315px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+
+    &:nth-child(6) {
+      img {
+        object-position: top;
+      }
+    }
   }
 
   .tags {
@@ -45,7 +51,6 @@
 }
 
 .imgWrapper {
-  max-width: 315px;
   height: 315px;
   img {
     display: block;
