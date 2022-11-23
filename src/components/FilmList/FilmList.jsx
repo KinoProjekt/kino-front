@@ -37,42 +37,44 @@ const FilmList = (props) => {
   }
 
   return (
-    <div className={s.wrapperFilms}>
-      <div className={s.rowFilms}>
-        <div>
-          {!props.isMainSite && <h1>NA EKRANIE KINA</h1>}
-          {props.isMainSite && <h1>REPERTUAR KINA</h1>}
-          <SearchInput />
-        </div>
-        <div>
+    <div>
+      <div className={s.wrapperFilms + " container"}>
+        <div className={s.rowFilms}>
           <div>
-            <Button isActive={false}>W Repertuarze</Button>
-            <Button isActive={true}>Premiery</Button>
+            {!props.isMainSite && <h1>NA EKRANIE KINA</h1>}
+            {props.isMainSite && <h1>REPERTUAR KINA</h1>}
+            <SearchInput />
           </div>
-          <div className={s.column}>
-            <ComboBox options={options} label={label} />
-            <DatePicker />
+          <div>
+            <div>
+              <Button isActive={false}>W Repertuarze</Button>
+              <Button isActive={true}>Premiery</Button>
+            </div>
+            <div className={s.column}>
+              <ComboBox options={options} label={label} />
+              <DatePicker />
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        {genMovies.map((movie) => {
-          return <MovieEntry key={movie.title} movie={movie} />
-        })}
-        {props.isMainSite && !noMore && (
-          <div className={s.popup}>
-            <div ref={scrollRef} className={s.showMore} onClick={showMore}>
-              Pokaz więcej
+        <div>
+          {genMovies.map((movie) => {
+            return <MovieEntry key={movie.title} movie={movie} />
+          })}
+          {props.isMainSite && !noMore && (
+            <div className={s.popup}>
+              <div ref={scrollRef} className={s.showMore} onClick={showMore}>
+                Pokaz więcej
+              </div>
             </div>
-          </div>
-        )}
-        {props.isMainSite && noMore && (
-          <div className={s.popup}>
-            <div ref={scrollRef} className={s.noMore} onClick={showMore}>
-              Nie znaleziono więcej filmów...
+          )}
+          {props.isMainSite && noMore && (
+            <div className={s.popup}>
+              <div ref={scrollRef} className={s.noMore} onClick={showMore}>
+                Nie znaleziono więcej filmów...
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   )

@@ -1,9 +1,7 @@
 @use '../../styles/' as *;
 
 .wrapper {
-  max-width: 1366px;
-  margin: 0 auto 50px;
-  padding: 0 20px;
+  margin: 0 0 50px 0;
   font-family: $GeneralSansRegular;
 
   h1 {

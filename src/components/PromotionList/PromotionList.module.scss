@@ -1,12 +1,7 @@
 @use '../../styles' as *;
 
 .wrapper {
-  padding: 0 20px;
-  max-width: 1366px;
-  margin: 0 auto 100px;
-
   font-family: $GeneralSansMedium;
-
   h1 {
     margin: 50px 0;
   }
@@ -17,6 +12,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 250px 250px 250px;
   gap: 30px;
+  margin-bottom: 100px;
 
   img {
     display: block;

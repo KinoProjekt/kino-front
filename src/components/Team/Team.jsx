@@ -46,8 +46,8 @@ const Card = ({ src, name, tags }) => {
 
 const Team = () => {
   return (
-    <>
-      <div className={s.wrapper}>
+    <div>
+      <div className={s.wrapper + " container"}>
         <h1>Zgrany zespół to podstawa</h1>
 
         <div className={s.grid}>
@@ -88,7 +88,7 @@ const Team = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
