@@ -12,7 +12,7 @@ function CheckRoute() {
 const Navbar = () => {
   const navigation = useNavigate()
   return (
-    <div>
+    <div className={s.wrapper}>
       <nav className={s.navWrapper + ' container'}>
         <div className={s.navRow}>
           <div className={s.navLeft}>

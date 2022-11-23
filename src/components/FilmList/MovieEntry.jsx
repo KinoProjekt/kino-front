@@ -6,7 +6,7 @@ const MovieEntry = ({ movie }) => {
   return (
     <>
       <Line />
-      <div className={styles.movie}>
+      <div className={styles.movie + ' container'}>
         <AiOutlinePlus />
         <div>
           <p>{movie.title}</p>
