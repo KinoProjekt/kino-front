@@ -6,10 +6,12 @@ const Footer = () => {
 
   return (
     <div className={s.footer}>
-      <span className={s.left}>2022 &copy; Multiverse</span>
-      <span className={s.right} onClick={() => navigation('/team')}>
-        o agencji
-      </span>
+      <div className="container">
+        <span className={s.left}>2022 &copy; Multiverse</span>
+        <span className={s.right} onClick={() => navigation('/team')}>
+          o agencji
+        </span>
+      </div>
     </div>
   )
 }

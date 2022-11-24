@@ -3,14 +3,14 @@
 .wrapperFilms {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 }
 .rowFilms {
   & > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 25px 0px 10px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 .column {

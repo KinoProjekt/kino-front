@@ -1,5 +1,10 @@
 @import '../../styles/index.scss';
 
+.wrapper {
+  overflow: auto;
+  margin-bottom: 40px;
+}
+
 .navWrapper {
   margin: 2rem 20px;
   display: flex;
@@ -7,7 +12,7 @@
   flex-direction: column;
   height: 100px;
   user-select: none;
-  
+
   & .navRow {
     padding: 0.6rem 0;
     display: flex;
@@ -55,7 +60,7 @@
 
       & .navMenu {
         width: auto;
-        padding: .4rem 1rem;
+        padding: 0.4rem 1rem;
         font-size: 1rem;
         font-family: 'GeneralSans-Regular';
         text-align: center;

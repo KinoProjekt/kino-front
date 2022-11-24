@@ -3,12 +3,16 @@ import Event from './Event'
 
 const EventList = () => {
   return (
-    <div className={s.eventListWrapper}>
-      <h1>Polecane wydarzenia</h1>
+    <div>
+      <div className={s.eventListWrapper + ' container'}>
+        <div>
+          <h1>Polecane wydarzenia</h1>
+        </div>
 
-      {events.map((el) => (
-        <Event event={el} key={el.id} />
-      ))}
+        {events.map((el) => (
+          <Event event={el} key={el.id} />
+        ))}
+      </div>
     </div>
   )
 }

@@ -3,13 +3,15 @@ import Promotion from './Promotion'
 
 const PromotionList = () => {
   return (
-    <div className={s.wrapper}>
-      <h1>Nasze promocje</h1>
+    <div>
+      <div className={s.wrapper + ' container'}>
+        <h1>Nasze promocje</h1>
 
-      <div className={s.promWrapper}>
-        {promotions.map((el) => (
-          <Promotion promotion={el} key={el.id} />
-        ))}
+        <div className={s.promWrapper}>
+          {promotions.map((el) => (
+            <Promotion promotion={el} key={el.id} />
+          ))}
+        </div>
       </div>
     </div>
   )
