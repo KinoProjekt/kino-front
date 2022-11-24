@@ -38,14 +38,14 @@ const FilmList = (props) => {
 
   return (
     <div>
-      <div className={s.wrapperFilms}>
+      <div className={s.wrapperFilms + " container"}>
         <div className={s.rowFilms}>
-          <div className="container">
+          <div>
             {!props.isMainSite && <h1>NA EKRANIE KINA</h1>}
             {props.isMainSite && <h1>REPERTUAR KINA</h1>}
             <SearchInput />
           </div>
-          <div className="container">
+          <div>
             <div>
               <Button isActive={false}>W Repertuarze</Button>
               <Button isActive={true}>Premiery</Button>
