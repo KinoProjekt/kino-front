@@ -3,17 +3,34 @@ $GeneralSansMedium: 'GeneralSans-Medium', sans-serif;
 $GeneralSansRegular: 'GeneralSans-Regular', sans-serif;
 $BebasNeue: 'BebasNeue', cursive;
 
-$small-size: 0.75rem;
+$base-font-size: .975rem;
+$sm-font-size: calc($base-font-size * 0.75);
+$lg-font-size: calc($base-font-size * 1.5);
+$xl-font-size: calc($base-font-size * 2);
+$xxl-font-size: calc($base-font-size * 4);
+
+$weight: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700
+);
+
+$line-height: (
+  base: calc($base-font-size * 1.5),
+  sm: calc($sm-font-size * 1.5),
+  lg: calc($lg-font-size * 1.5),
+  xl: calc($xl-font-size * 1.5),
+  xxl: calc($xxl-font-size * 1.5)
+);
+
+$letter-spacing: 0.03rem;
+
+// $small-size: 0.75rem;
 $normal-size: 0.975rem;
-$large-size: 2rem;
-$larger-size: 4rem;
+// $large-size: 2rem;
+// $larger-size: 4rem;
 
-$font-regular: 400;
-$font-medium: 500;
-$font-semibold: 600;
-
-h1 {
-  font-size: 2.5rem;
-  font-family:$BebasNeue;
-  text-transform: uppercase;
-}
+// $font-regular: 400;
+// $font-medium: 500;
+// $font-semibold: 600;

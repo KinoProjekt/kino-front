@@ -2,3 +2,37 @@ $white: #F2F2F2;
 $black: #1D1D1D;
 $purple: #6c63ff;
 $gray: #D9D9D9;
+
+// example: map-get($colors, black)
+
+$colors: (
+  white: $white,
+  black: $black,
+  purple: $purple,
+  gray: $gray
+);
+
+// @each $name, $color in $colors {
+//   .text-#{name} {
+//     color: $color;
+//   }
+
+//   .bg-#{name} {
+//     -webkit-background-color: $color;
+//     background-color: $color;
+//   }
+
+//   @for $i from 1 through 9 {
+//     .bg-#{name}-lighten-#{$i} {
+//       -webkit-background-color: lighten($color, $i * 10);
+//       background-color: lighten($color, $i * 10);
+//     }
+//   }
+
+//   @for $i from 1 through 9 {
+//     .bg-#{name}-darken-#{$i} {
+//       -webkit-background-color: darken($color, $i * 10);
+//       background-color: darken($color, $i * 10);
+//     }
+//   }
+// }

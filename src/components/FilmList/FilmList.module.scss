@@ -64,6 +64,7 @@ button:first-child {
 }
 .showMore,
 .noMore {
+  margin: 3rem;
   font-family: $GeneralSansSemibold;
   color: $black;
   font-size: 1rem;
@@ -74,13 +75,13 @@ button:first-child {
   margin-bottom: 30px;
   cursor: pointer;
   user-select: none;
-  transition: 0.2s ease-out;
+  transition: 0.4s ease-out;
 }
 .showMore:hover {
   font-size: 1.5rem;
   background-color: $purple;
   color: $white;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .noMore {
   border: 3px solid rgb(226, 0, 0) !important;

@@ -1,6 +1,8 @@
 html,
 body {
-  background-color: $white;
+  -webkit-background-color: map-get($colors, dark);
+  background-color: map-get($colors, dark);
+  color: map-get($colors, light);
 }
 
 .container {
@@ -8,4 +10,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: $BebasNeue;
+  text-transform: uppercase;
 }

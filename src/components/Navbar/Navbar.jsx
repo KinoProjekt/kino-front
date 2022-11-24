@@ -16,7 +16,9 @@ const Navbar = () => {
       <nav className={s.navWrapper + ' container'}>
         <div className={s.navRow}>
           <div className={s.navLeft}>
-            <span className={s.navTitle}>Multiverse©</span>
+            <span className={s.navTitle}>
+              Multiverse<sup>©</sup>
+            </span>
           </div>
           <div className={s.navRight}>
             <FaRegLightbulb className={s.navIcon} />

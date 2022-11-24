@@ -51,6 +51,18 @@
     & .navLeft {
       font-size: 2rem;
       font-family: 'GeneralSans-Medium';
+
+      & .navTitle {
+        font-size: 3rem;
+        font-family: 'GeneralSans-Regular';
+        font-weight: 500;
+        color: $black;
+
+        & sup {
+          vertical-align: super;
+          font-size: 2rem;
+        }
+      }
     }
 
     & .navLeftRow {
@@ -60,6 +72,7 @@
 
       & .navMenu {
         width: auto;
+        margin: .4rem 0;
         padding: 0.4rem 1rem;
         font-size: 1rem;
         font-family: 'GeneralSans-Regular';
