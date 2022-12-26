@@ -1,5 +1,5 @@
 // import s from './MainSite.module.scss'
-import { FilmList, EventList, PromotionList } from '../../components/'
+import { FilmList, EventList, PromotionList, NewsList } from '../../components/'
 
 const MainSite = () => {
   return (
@@ -7,6 +7,7 @@ const MainSite = () => {
       <FilmList />
       <EventList />
       <PromotionList />
+      <NewsList />
     </>
   )
 }

@@ -3,6 +3,7 @@ import Footer from './Footer/Footer'
 import FilmList from './FilmList/FilmList'
 import EventList from './EventList/EventList'
 import PromotionList from './PromotionList/PromotionList'
+import NewsList from './NewsList/NewsList'
 import Team from './Team/Team'
 
-export { Navbar, Footer, FilmList, EventList, PromotionList, Team }
+export { Navbar, Footer, FilmList, EventList, PromotionList, NewsList, Team }

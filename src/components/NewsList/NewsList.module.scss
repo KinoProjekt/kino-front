@@ -1,0 +1,37 @@
+@use '../../styles' as *;
+
+.wrapper {
+  padding: 0 40px;
+
+  font-family: $GeneralSansMedium;
+
+  h1 {
+    margin: 50px 0;
+  }
+}
+
+.newsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 250px;
+  gap: 30px;
+  margin-bottom: 40px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: calc(100% - 50px);
+    max-height: 250px;
+    object-fit: cover;
+  }
+  figcaption {
+    p:first-child {
+      padding: 15px 0 10px;
+    }
+
+    p:last-child {
+      color: $purple;
+      font-size: 0.9rem;
+    }
+  }
+}

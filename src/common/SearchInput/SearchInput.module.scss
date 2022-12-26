@@ -1,6 +1,5 @@
 @use '../../styles' as *;
 
-
 .inputWrapper {
   input {
     border: none;
@@ -13,11 +12,10 @@
     min-width: 200px;
     transition: font-size 0.5s ease-out;
     margin-right: -24px;
-    background: $white;
 
     &:focus {
       font-size: 1.25rem;
-      transition: 0.10s ease-in-out;
+      transition: 0.1s ease-in-out;
     }
   }
 
