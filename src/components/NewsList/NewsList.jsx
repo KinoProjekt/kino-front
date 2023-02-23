@@ -3,7 +3,7 @@ import News from './News'
 
 const NewsList = (props) => {
   return (
-    <div className={s.wrapper}>
+    <div className={s.wrapper + " container"}>
       <h1>Najnowsze wiadomości i aktualności</h1>
 
       <div className={s.newsWrapper}>
