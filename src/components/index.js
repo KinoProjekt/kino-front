@@ -5,5 +5,6 @@ import EventList from './EventList/EventList'
 import PromotionList from './PromotionList/PromotionList'
 import NewsList from './NewsList/NewsList'
 import Team from './Team/Team'
+import Login from './Login/Login'
 
-export { Navbar, Footer, FilmList, EventList, PromotionList, NewsList, Team }
+export { Navbar, Footer, FilmList, EventList, PromotionList, NewsList, Team, Login }

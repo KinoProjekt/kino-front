@@ -7,4 +7,11 @@
   font-size: $normal-size;
   border: none;
   cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
+
+.btnActive {
+  background-color: #6C63FF;
+  color: white;
 }

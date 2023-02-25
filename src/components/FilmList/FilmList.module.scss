@@ -3,6 +3,9 @@
 .wrapperFilms {
   display: flex;
   flex-direction: column;
+  button:first-child {
+    padding-left: 0px;
+  }
 }
 .rowFilms {
   & > div {
@@ -59,9 +62,7 @@
 .searchInputWrapper {
   margin-top: 200px;
 }
-button:first-child {
-  padding-left: 0px;
-}
+
 .showMore,
 .noMore {
   margin: 3rem;
